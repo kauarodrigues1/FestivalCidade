@@ -1,12 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FestivalCidade
+﻿namespace FestivalCidade
 {
-    internal class Usuario
+    class Usuario
     {
+        public string Nome { get; set; }
+        public int QuantidadeDias { get; set; }
+        public string Cupom { get; set; }
+        public int PontuacaoClube { get; set; }
+        public Usuario(string nome, int quantidadeDias, string cupom, int pontuacaoClube)
+        {
+            Nome = nome;
+            QuantidadeDias = quantidadeDias;
+            Cupom = cupom;
+            PontuacaoClube = pontuacaoClube;
+        }
     }
+
 }
