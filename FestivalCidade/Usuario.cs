@@ -26,6 +26,10 @@
 
             return 0.00m;
         }
+        public decimal CalcularValorFinal()
+        {
+            return CalcularCustoBruto() - CalcularDesconto();
+        }
     }
 
 }
