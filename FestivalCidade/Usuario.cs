@@ -17,6 +17,15 @@
         {
             return 15.00m + (QuantidadeDias * 120.00m);
         }
+        public decimal CalcularDesconto()
+        {
+            if (Cupom.Equals("ROCK10", StringComparison.OrdinalIgnoreCase))
+            {
+                return CalcularCustoBruto() * 0.10m;
+            }
+
+            return 0.00m;
+        }
     }
 
 }
