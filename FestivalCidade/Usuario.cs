@@ -30,6 +30,10 @@
         {
             return CalcularCustoBruto() - CalcularDesconto();
         }
+        public bool TemAcessoVip()
+        {
+            return QuantidadeDias > 2 && PontuacaoClube >= 500;
+        }
     }
 
 }
