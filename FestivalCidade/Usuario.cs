@@ -13,6 +13,10 @@
             Cupom = cupom;
             PontuacaoClube = pontuacaoClube;
         }
+        public decimal CalcularCustoBruto()
+        {
+            return 15.00m + (QuantidadeDias * 120.00m);
+        }
     }
 
 }
